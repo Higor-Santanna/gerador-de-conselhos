@@ -1,0 +1,19 @@
+@media(max-width: 576px){
+    .caixa-principal{
+        width: 20em;
+    }
+
+    .advice{
+        margin: 2.8em 0 1.8em 0;
+        font-size: 14px;
+    }
+
+    .conselhos{
+        font-size: 17px;
+        margin-bottom: 1.8em;
+    }
+
+    .posicionamento-botao .botao{
+        transform: translateY(70%);
+    }
+}
