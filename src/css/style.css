@@ -1,56 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;800&family=Lato:ital,wght@0,300;0,400;1,300;1,400;1,700;1,900&display=swap');
 
 body{
-    background-color: hsl(218, 23%, 16%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: var(--cor-de-fundo);
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+}
+
+.alinhamento-dos-elementos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .caixa-principal{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32em;
-    height: 20em;
+    width: 345px;
+    margin: 20px;
     border-radius: 10px;
-    background-color: hsl(217, 19%, 24%);
-}
-
-.textos{
-    font-family: 'Kumbh Sans', sans-serif;
-    text-align: center;
+    background-color: var(--cor-de-fundo-dos-textos);
 }
 
 .advice, .numero-conselho{
-    color: hsl(150, 100%, 66%);
+    color: var(--cor-do-botao-textos);
     margin: 3em 0 2em 0;
     font-size: 15px;
     font-weight: 400;
 }
 
 .conselhos{
-    color: hsl(193, 38%, 86%);
+    color: var(--cor-dos-conselhos);
     padding: 0 60px;
     margin-bottom: 2em;
     font-size: 20px;
     font-weight: 800;
 }
 
-.posicionamento-botao .botao{
+picture .divisoria-desktop{
+    width: 280px;
+    height: 14px;
+}
+
+.botao{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color:hsl(150, 100%, 66%);
-    transform: translateY(80%);
+    background-color: var(--cor-do-botao-textos);
+    transform: translateY(50%);
 }
 
 .botao:hover{
     color: #53FFAB;
     cursor: pointer;
-    box-shadow: 0 5px 15px hsl(150, 100%, 66%);
+    box-shadow: 0 5px 15px var(--cor-do-botao-textos);
 }

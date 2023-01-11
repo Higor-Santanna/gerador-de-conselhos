@@ -9,27 +9,31 @@
 
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
-    <main class="caixa-principal">
-        <div class="textos">
-            <p class="advice"> Advice <span class="numero-conselho">#117</span> </p>
-    
-            <p class="conselhos">Lute. Acredite. Conquiste. Perca. Deseje. Espere. Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre.</p>
-        </div>
-    
-        <picture class="detalhe-pattern">
-            <source srcset="imagens/pattern-divider-mobile.svg" media="(max-width: 576px)">
-            <img src="imagens/pattern-divider-desktop.svg" alt="Pattern divider">
-        </picture>
-    
-        <div class="posicionamento-botao">
-            <button class="botao">
+    <div class="alinhamento-dos-elementos">
+        <main class="caixa-principal">
+            <div class="textos">
+                <p class="advice"> Advice <span class="numero-conselho" id="id-conselho"></span> </p>
+        
+                <p class="conselhos" id="conselhos"><p>
+            </div>
+        
+            <picture class="detalhe-pattern">
+                <source srcset="imagens/pattern-divider-mobile.svg" media="(max-width: 576px)" class="pattern-divider-mobile">
+                <img src="imagens/pattern-divider-desktop.svg" alt="Pattern divider" class="divisoria-desktop">
+            </picture>
+        
+         
+            <button class="botao" id="button">
                 <img src="imagens/icon-dice.svg" alt="Dice icon">
             </button>
-        </div>
-    </main>
+        </main>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

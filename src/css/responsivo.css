@@ -13,7 +13,22 @@
         margin-bottom: 1.8em;
     }
 
+    picture .divisoria-desktop{
+        width: 260px;
+        height: 17px;
+    }
+
     .posicionamento-botao .botao{
         transform: translateY(70%);
+    }
+}
+
+@media(max-width: 325px){
+    .caixa-principal{
+        width: 19em;
+    }
+    
+    .posicionamento-botao .botao{
+        transform: translateY(30%);
     }
 }
